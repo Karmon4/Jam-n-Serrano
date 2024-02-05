@@ -8,11 +8,12 @@ import { MarketComponent } from './market/market.component';
 import { MyWalletComponent } from './my-wallet/my-wallet.component';
 import { Page404Component } from './page404/page404.component';
 import { CreditsComponent } from './credits/credits.component';
+import { CoinCardComponent } from './coin-card/coin-card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HeadComponent,NavMenuComponent,FootComponent,MarketComponent,MyWalletComponent,Page404Component,CreditsComponent],
+  imports: [CommonModule, RouterOutlet,HeadComponent,NavMenuComponent,FootComponent,MarketComponent,MyWalletComponent,Page404Component,CreditsComponent,CoinCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
