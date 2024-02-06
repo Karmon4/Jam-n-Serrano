@@ -9,11 +9,13 @@ import { MyWalletComponent } from './my-wallet/my-wallet.component';
 import { Page404Component } from './page404/page404.component';
 import { CreditsComponent } from './credits/credits.component';
 import { CoinCardComponent } from './coin-card/coin-card.component';
+import { AssetActionsComponent } from './asset-actions/asset-actions.component';
+import { AssetQuantityComponent } from './asset-quantity/asset-quantity.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HeadComponent,NavMenuComponent,FootComponent,MarketComponent,MyWalletComponent,Page404Component,CreditsComponent,CoinCardComponent],
+  imports: [CommonModule, RouterOutlet,HeadComponent,NavMenuComponent,FootComponent,MarketComponent,MyWalletComponent,Page404Component,CreditsComponent,CoinCardComponent,AssetActionsComponent,AssetQuantityComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -40,7 +40,7 @@
         </td>
         <td scope="col" class="text-end">
           <!-- AQUÍ EL VALOR TOTAL DE CADA MONEDA -->
-          
+          {{c.precio*c.unidades}}
         </td>
         <td scope="col" class="text-end">
           <!-- AQUÍ EL PRECIO DE LA MONEDA -->
@@ -48,13 +48,15 @@
         </td>
         <td scope="col" class="text-end">
           <!-- AQUÍ EL COMPONENTE CON EL CAMPO DE TEXTO Y EL BOTÓN -->
+          <app-asset-quantity [asset]="c"></app-asset-quantity>
         </td>
         <td scope="col" class="text-end">
           <!-- AQUÍ EL VALOR CONVERTIDO A EUROS -->
-          {{c.precio*0.93}} $
+          {{c.precio*c.unidades*0.93}} $
         </td>
         <td scope="col" class="text-end">
           <!-- AQUÍ EL COMPONENTE CON LOS 3 BOTONES -->
+          <app-asset-actions [asset]="c"></app-asset-actions>
         </td>
     </tr>
 
